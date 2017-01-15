@@ -13,6 +13,14 @@
 KeyboardManager keyboardManager = new KeyboardManager(this,
         "org.samples.langpack.KEYBOARD",
         "org.samples.langpack.keyboards");
+// all user-installed keyboards
+List<Keyboard> keyboards = keyboardManager.findAllKeyboards();
+```
+####Get all installed keyboards and associated ifos:
+```
+KeyboardManager keyboardManager = new KeyboardManager(this,
+        "org.samples.langpack.KEYBOARD",
+        "org.samples.langpack.keyboards");
 List<KeyboardAddOnAndBuilder> keyboards = keyboardManager.findAllKeyboardBuilders();
 
 for (KeyboardAddOnAndBuilder builder : keyboards) {

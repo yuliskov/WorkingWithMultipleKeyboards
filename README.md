@@ -15,11 +15,12 @@ KeyboardManager keyboardManager = new KeyboardManager(this,
         "org.samples.langpack.keyboards");
 List<KeyboardAddOnAndBuilder> keyboards = keyboardManager.findAllKeyboardBuilders();
 
-LinearLayout container = (LinearLayout) findViewById(R.id.container);
 for (KeyboardAddOnAndBuilder builder : keyboards) {
-    TextView child = new TextView(this);
-    child.setText(builder.getKeyboardLocale() + " " + builder.getKeyboardDescription());
-    container.addView(child);
+    // keyboard info
+    String keyboardLocale = builder.getKeyboardLocale();
+    String keyboardDescription = builder.getKeyboardDescription();
+    // keyboard class, ready to embed into your app
+    Keyboard keyboard = builder.createKeyboard();
 }
 ```
 

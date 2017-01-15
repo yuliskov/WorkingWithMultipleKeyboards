@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionaries>
+    <Dictionary nameResId="@string/dictionary" locale="en" id="be559bc6-a089-46ed-9f23-bbdde08dbef1" type="binary" dictionaryAssertName="ar_binary.mp3" description="Addon dictionary based on Wikipedia" />
+</Dictionaries>

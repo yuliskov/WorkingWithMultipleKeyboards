@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ids must match corresponding resources in main keyboard -->
+    <public type="xml" name="shift_0" id="0x7f040021" />
+    <public type="xml" name="shift_1" id="0x7f040022" />
+    <public type="xml" name="shift_2" id="0x7f040023" />
+    <public type="xml" name="shift_3" id="0x7f040024" />
+    <public type="xml" name="shift_4" id="0x7f040025" />
+    <public type="xml" name="shift_4_en_gb" id="0x7f040026" />
+    <public type="xml" name="shift_4_en_in" id="0x7f040027" />
+    <public type="xml" name="shift_4_eu" id="0x7f040028" />
+    <public type="xml" name="shift_5" id="0x7f040029" />
+    <public type="xml" name="shift_6" id="0x7f04002a" />
+    <public type="xml" name="shift_7" id="0x7f04002b" />
+    <public type="xml" name="shift_8" id="0x7f04002c" />
+    <public type="xml" name="shift_9" id="0x7f04002d" />
+</resources>

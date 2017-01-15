@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.samples.russiankeyboard">
+
+    <application android:allowBackup="true"
+                 android:label="Russian Keyboard"
+                 android:icon="@mipmap/ic_launcher"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme">
+        <receiver android:exported="true" android:name="org.samples.langpack.PackBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.samples.langpack.KEYBOARD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+            </intent-filter>
+            <meta-data android:name="org.samples.langpack.keyboards" android:resource="@xml/keyboards"/>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/key_width" android:keyHeight="@dimen/key_height" android:horizontalGap="@dimen/keyboard_horizontal_gap" android:verticalGap="@dimen/keyboard_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="296" android:keyEdgeFlags="left" android:keyIcon="@drawable/ic_ime_accent_close" />
+        <Key android:codes="293" android:keyLabel="æ" />
+        <Key android:codes="292" android:keyLabel="ã" />
+        <Key android:codes="291" android:keyLabel="å" />
+        <Key android:codes="290" android:keyLabel="ā" />
+        <Key android:codes="289" android:keyLabel="à" />
+        <Key android:codes="288" android:keyLabel="á" />
+        <Key android:codes="287" android:keyLabel="â" />
+        <Key android:codes="286" android:keyEdgeFlags="right" android:keyLabel="ä" />
+    </Row>
+</Keyboard>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboards>
+    <Keyboard nameResId="@string/qwerty_dictionary" iconResId="@drawable/app_icon" layoutResId="@xml/qwerty" landscapeResId="@xml/qwerty" id="be0ce9d0-334a-11e2-81c1-0800200c9a66" defaultDictionaryLocale="ru" description="Russian - addon keyboard" index="1" defaultEnabled="true" />
+</Keyboards>

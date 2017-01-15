@@ -10,15 +10,21 @@
 ###Sample usage
 ####Get all installed keyboards:
 ```
-KeyboardManager keyboardManager = new KeyboardManager(context,
+KeyboardManager keyboardManager = new KeyboardManager(this,
         "org.samples.langpack.KEYBOARD",
         "org.samples.langpack.keyboards");
-List<KeyboardAddOnAndBuilder> builders = keyboardManager.findAllKeyboardBuilders();
-Keyboard keyboard = builders.get(0).createKeyboard();
+List<KeyboardAddOnAndBuilder> keyboards = keyboardManager.findAllKeyboardBuilders();
+
+LinearLayout container = (LinearLayout) findViewById(R.id.container);
+for (KeyboardAddOnAndBuilder builder : keyboards) {
+    TextView child = new TextView(this);
+    child.setText(builder.getKeyboardLocale() + " " + builder.getKeyboardDescription());
+    container.addView(child);
+}
 ```
 
 ###Prepare language pack
-Create empty receiver. Receiver's manifest must be like this.
+Create empty receiver. Receiver's manifest must be like this. Add keyboard resouces to package.
 ```
 <receiver android:exported="true" android:name="org.sample.langpack.PackBroadcastReceiver">
     <intent-filter>

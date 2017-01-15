@@ -1,10 +1,11 @@
-#WorkingWithMultipleKeyboards
+##WorkingWithMultipleKeyboards
 
-##Note. This is not a keyboard. This sample tries to demonstrate how to implement keyboard as addons.
+###Note. This is not a keyboard. This sample tries to demonstrate how to implement keyboard as addons.
 
-###MainKeyboardApp - this app gets load all installed keyboard addons
-###RussianKeyboard, EnglishKeyboard - standalone keyboard packages
-###Code was taken from: https://github.com/AnySoftKeyboard/AnySoftKeyboard
+###Project contents:
+- MainKeyboardApp - this app gets load all installed keyboard addons
+- RussianKeyboard, EnglishKeyboard - standalone keyboard packages
+- Code was taken from: https://github.com/AnySoftKeyboard/AnySoftKeyboard
 
 ###Sample usage
 ####Get all installed keyboards:
@@ -31,4 +32,7 @@ Create empty receiver. Receiver's manifest must be like this.
 </receiver>
 ```
 
-##Screenshot of running app with two keyboards installed
+###Screenshot of running app with two keyboards installed
+![][running_app]
+
+[running_app]: https://raw.githubusercontent.com/yuliskov/WorkingWithMultipleKeyboards/master/screen.png

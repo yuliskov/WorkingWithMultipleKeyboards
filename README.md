@@ -16,7 +16,7 @@ KeyboardManager keyboardManager = new KeyboardManager(this,
 // all user-installed keyboards
 List<Keyboard> keyboards = keyboardManager.findAllKeyboards();
 ```
-####Get all installed keyboards and associated ifos:
+####Get all installed keyboards and associated infos:
 ```
 KeyboardManager keyboardManager = new KeyboardManager(this,
         "org.samples.langpack.KEYBOARD",
